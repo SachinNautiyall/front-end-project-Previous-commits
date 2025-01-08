@@ -51,10 +51,14 @@ body {
     color: #333;
     font-size: 18px;
     font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .menu-items a:hover {
-    color: #007BFF;
+    background-color: #007bffa4;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .info-box {
@@ -92,6 +96,7 @@ body {
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .gallery-item img {
@@ -100,6 +105,7 @@ body {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 .location-name {
@@ -114,4 +120,13 @@ body {
     padding: 5px;
     width: 100%;
     text-align: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.02);
 }
